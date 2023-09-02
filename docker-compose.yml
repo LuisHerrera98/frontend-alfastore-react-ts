@@ -1,12 +1,12 @@
 version: '3'
 
-services: 
+services:
   frontend_thealfastore:
-    container_name: frontend-thealfastore
-    image: frontend-thealfastore
-    build: 
+    container_name: frontend
+    image: frontend
+    build:
       context: .
     ports:
       - "3001:3001"
-    environment: 
+    environment:
       - VITE_API_URL=https://api.alfastoreargentina.com
