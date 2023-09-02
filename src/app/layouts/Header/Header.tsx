@@ -17,7 +17,7 @@ export const Header = () => {
   return (
     <header>
       <div className='header-top'>
-        <p className="header-top__info">ENVÍO GRATIS COMPRA SUPERIOR A $50.000</p>
+        <p className="header-top__info">ENVÍO GRATIS COMPRA SUPERIOR A $100.000</p>
       </div>
       <nav className='nav'>
         <ul className="nav__box">

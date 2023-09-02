@@ -5,9 +5,10 @@
   "type": "module",
   "scripts": {
     "dev": "vite",
-    "build": "tsc && vite build",
+    "build": "tsc && vite build --emptyOutDir && git -C ../front-alfastore add . && git -C ../front-alfastore commit -m 'update' && git -C ../front-alfastore push",
     "preview": "vite preview",
-    "deploy": "gh-pages -d dist"
+    "deploy": "gh-pages -d dist",
+    "start": "http-server dist -p 3001"
   },
   "dependencies": {
     "@types/styled-components": "^5.1.26",
