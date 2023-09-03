@@ -6,7 +6,7 @@ export const useCreateCategory = async (data: CreateCategoryRequest) => {
     
     const body: CreateCategoryRequest = new CreateCategoryRequest(data.category_name);
     try {
-        const response = await fetch(`${import.meta.env.VITE_API_URL}/api/category/create`, {
+        const response = await fetch(`${import.meta.env.VITE_API_URL}/category/create`, {
             method: 'POST',
             headers: {
                 "content-type": "application/json; charset=utf-8"
